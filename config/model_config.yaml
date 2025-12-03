@@ -1,0 +1,25 @@
+whisper:
+  model_size: base
+  language: en
+  task: transcribe
+
+gemini:
+  model_name: gemini-2.5-flash
+  json_output: false
+  generation:
+    temperature: 0.4
+    max_output_tokens: 800
+    top_p: 0.9
+    top_k: 40
+
+groq:
+  provider: groq
+  model_name: llama-3.3-70b-versatile
+  temperature: 0.3
+  max_tokens: 1024
+  
+deepseek:
+  provider: openrouter
+  model_name: deepseek/deepseek-chat
+  temperature: 0.3
+  max_tokens: 1024

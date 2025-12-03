@@ -1,0 +1,1584 @@
+2025-11-27 16:53:52,547 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\summarizer.py", line 74, in summarize
+    response = self.client.generate(prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-11-27 16:53:57,477 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 77, in extract_tasks
+    text = response.candidates[0].content.parts[0].text
+AttributeError: 'str' object has no attribute 'candidates'
+
+2025-11-27 16:54:03,009 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\sentiment_analyzer.py", line 82, in analyze_sentiment
+    response = self.client.generate(prompt=prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-11-27 16:54:11,097 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\research\topic_extractor.py", line 53, in extract_topic
+    response = self.client.generate(prompt=prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-11-27 17:04:19,253 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\summarizer.py", line 75, in summarize
+    summary = response.candidates[0].content.parts[0].text
+AttributeError: 'str' object has no attribute 'candidates'
+
+2025-11-27 17:29:34,817 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\summarizer.py", line 74, in summarize
+    summary = self.client.generate(prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-11-27 17:29:55,186 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\sentiment_analyzer.py", line 82, in analyze_sentiment
+    text = self.client.generate(prompt=prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-11-27 17:30:00,983 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\research\topic_extractor.py", line 53, in extract_topic
+    topic = self.client.generate(prompt=prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-11-27 17:47:59,722 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\summarizer.py", line 74, in summarize
+    summary = self.client.generate(prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-11-27 17:48:05,170 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 76, in extract_tasks
+    text = self.client.generate(prompt=prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-11-27 17:48:10,627 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\sentiment_analyzer.py", line 82, in analyze_sentiment
+    text = self.client.generate(prompt=prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-11-27 17:48:16,363 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\research\topic_extractor.py", line 53, in extract_topic
+    topic = self.client.generate(prompt=prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-11-27 21:39:10,946 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 76, in extract_tasks
+    text = self.client.generate(prompt=prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-11-27 21:48:07,643 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 76, in extract_tasks
+    text = self.client.generate(prompt=prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-11-27 21:51:03,430 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 76, in extract_tasks
+    text = self.client.generate(prompt=prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-11-27 21:53:53,263 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 76, in extract_tasks
+    text = self.client.generate(prompt=prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-11-27 22:05:10,828 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 76, in extract_tasks
+    text = self.client.generate(prompt=prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-11-27 22:08:15,901 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 76, in extract_tasks
+    text = self.client.generate(prompt=prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-11-27 22:11:14,016 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 76, in extract_tasks
+    text = self.client.generate(prompt=prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-11-27 22:15:46,954 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\summarizer.py", line 74, in summarize
+    summary = self.client.generate(prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-11-27 22:15:52,516 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 76, in extract_tasks
+    text = self.client.generate(prompt=prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-11-27 22:15:57,418 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\sentiment_analyzer.py", line 82, in analyze_sentiment
+    text = self.client.generate(prompt=prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-11-27 22:16:02,339 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\research\topic_extractor.py", line 53, in extract_topic
+    topic = self.client.generate(prompt=prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-11-30 12:02:29,611 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\summarizer.py", line 87, in summarize
+    return self.chain.invoke({"transcript": transcript})
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\runnables\base.py", line 3246, in invoke
+    input_ = context.run(step.invoke, input_, config)
+TypeError: GeminiClient.invoke() takes 2 positional arguments but 3 were given
+
+2025-11-30 12:05:48,655 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\summarizer.py", line 87, in summarize
+    return self.chain.invoke({"transcript": transcript})
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\runnables\base.py", line 3246, in invoke
+    input_ = context.run(step.invoke, input_, config)
+TypeError: GeminiClient.invoke() takes 2 positional arguments but 3 were given
+
+2025-11-30 12:06:35,176 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\summarizer.py", line 74, in summarize
+    summary = self.client.generate(prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.textz
+AttributeError: 'GenerateContentResponse' object has no attribute 'textz'
+
+2025-11-30 12:07:57,624 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\summarizer.py", line 74, in summarize
+    summary = self.client.generate(prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.textz
+AttributeError: 'GenerateContentResponse' object has no attribute 'textz'
+
+2025-11-30 12:41:59,310 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\summarizer.py", line 74, in summarize
+    summary = self.client.generate(prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-11-30 12:42:03,674 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 76, in extract_tasks
+    text = self.client.generate(prompt=prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-11-30 12:42:08,208 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\sentiment_analyzer.py", line 82, in analyze_sentiment
+    text = self.client.generate(prompt=prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-11-30 12:59:15,684 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\summarizer.py", line 83, in summarize
+    summary = self.client.generate(prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-11-30 17:55:04,595 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\sentiment_analyzer.py", line 92, in analyze_sentiment
+    text = self.client.generate(prompt=prompt)
+TypeError: LangChainGoogleClient.generate() missing 1 required positional argument: 'output_parser'
+
+2025-11-30 17:58:05,002 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 82, in parse_result
+    return parse_json_markdown(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 153, in parse_json_markdown
+    return _parse_json(json_str, parser=parser)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 169, in _parse_json
+    return parser(json_str)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 126, in parse_partial_json
+    return json.loads(s, strict=strict)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\sentiment_analyzer.py", line 92, in analyze_sentiment
+    text = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 85, in parse_result
+    raise OutputParserException(msg, llm_output=text) from e
+langchain_core.exceptions.OutputParserException: Invalid json output: Here's an analysis of the sentiment and emotional tone of the transcript:
+
+**Overall Sentiment:**
+The overall sentiment is **mixed, leaning slightly negative**. While the first sentence describes a productive, neutral activity, the second sentence introduces a clear negative emotional indicator.
+
+**Emotional Indicators:**
+
+*   **Neutral/Productive:** The first sentence ("Today
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-11-30 17:58:34,854 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 82, in parse_result
+    return parse_json_markdown(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 153, in parse_json_markdown
+    return _parse_json(json_str, parser=parser)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 169, in _parse_json
+    return parser(json_str)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 126, in parse_partial_json
+    return json.loads(s, strict=strict)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\sentiment_analyzer.py", line 92, in analyze_sentiment
+    text = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 85, in parse_result
+    raise OutputParserException(msg, llm_output=text) from e
+langchain_core.exceptions.OutputParserException: Invalid json output: Here's an analysis of the sentiment and emotional tone of the provided transcript:
+
+**Overall Sentiment:**
+*   **Mixed, leaning slightly negative.**
+    *   The first sentence is neutral and factual, describing actions taken.
+    *   The second sentence introduces a clear negative element with "concern" and "tight deadlines."
+
+**Emotional Indicators:**
+
+1
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-11-30 18:02:44,593 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\sentiment_analyzer.py", line 93, in analyze_sentiment
+    prompt = prompt.format(transcript=transcript)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\prompts\prompt.py", line 201, in format
+    return DEFAULT_FORMATTER_MAPPING[self.template_format](self.template, **kwargs)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\string.py", line 161, in format
+    return self.vformat(format_string, args, kwargs)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\formatting.py", line 33, in vformat
+    return super().vformat(format_string, args, kwargs)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\string.py", line 165, in vformat
+    result, _ = self._vformat(format_string, args, kwargs, used_args, 2)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\string.py", line 205, in _vformat
+    obj, arg_used = self.get_field(field_name, args, kwargs)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\string.py", line 270, in get_field
+    obj = self.get_value(first, args, kwargs)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\string.py", line 227, in get_value
+    return kwargs[key]
+KeyError: '\n    "overall_sentiment"'
+
+2025-11-30 19:23:57,202 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 82, in parse_result
+    return parse_json_markdown(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 153, in parse_json_markdown
+    return _parse_json(json_str, parser=parser)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 169, in _parse_json
+    return parser(json_str)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 126, in parse_partial_json
+    return json.loads(s, strict=strict)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 89, in extract_tasks
+    tasks = self.client.generate(prompt=prompt_text, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 81, in parse
+    return super().parse(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 65, in parse_result
+    json_object = super().parse_result(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 85, in parse_result
+    raise OutputParserException(msg, llm_output=text) from e
+langchain_core.exceptions.OutputParserException: Invalid json output: Here are the tasks extracted from the transcript:
+
+- **Task 1:**
+    - Task description: Finish the UI
+    - Responsible person: Sarah
+    - Due date: Friday
+- **Task 2:**
+    - Task description: Deploy the backend
+    - Responsible person: Ahmed
+    - Due date: Next Monday
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-11-30 19:53:01,204 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 89, in extract_tasks
+    tasks = self.client.generate(prompt=prompt_text, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 81, in parse
+    return super().parse(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 66, in parse_result
+    return self._parse_obj(json_object)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 29, in _parse_obj
+    if issubclass(self.pydantic_object, pydantic.v1.BaseModel):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\abc.py", line 123, in __subclasscheck__
+    return _abc_subclasscheck(cls, subclass)
+TypeError: issubclass() arg 1 must be a class
+
+2025-11-30 19:56:37,342 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 28, in _parse_obj
+    return self.pydantic_object.model_validate(obj)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\pydantic\main.py", line 705, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+pydantic_core._pydantic_core.ValidationError: 1 validation error for TaskList
+  Input should be a valid dictionary or instance of TaskList [type=model_type, input_value=[{'task': 'finish the UI'...adline': 'next Monday'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 92, in extract_tasks
+    tasks = self.client.generate(prompt=prompt_text, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 81, in parse
+    return super().parse(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 66, in parse_result
+    return self._parse_obj(json_object)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 35, in _parse_obj
+    raise self._parser_exception(e, obj) from e
+langchain_core.exceptions.OutputParserException: Failed to parse TaskList from completion [{"task": "finish the UI", "person": "Sarah", "deadline": "Friday"}, {"task": "deploy the backend", "person": "Ahmed", "deadline": "next Monday"}]. Got: 1 validation error for TaskList
+  Input should be a valid dictionary or instance of TaskList [type=model_type, input_value=[{'task': 'finish the UI'...adline': 'next Monday'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-11-30 19:57:17,127 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 28, in _parse_obj
+    return self.pydantic_object.model_validate(obj)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\pydantic\main.py", line 705, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+pydantic_core._pydantic_core.ValidationError: 1 validation error for TaskList
+  Input should be a valid dictionary or instance of TaskList [type=model_type, input_value=[{'task': 'finish the UI'...adline': 'next Monday'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 97, in extract_tasks
+    tasks = self.client.generate(prompt=prompt_text, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 81, in parse
+    return super().parse(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 66, in parse_result
+    return self._parse_obj(json_object)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 35, in _parse_obj
+    raise self._parser_exception(e, obj) from e
+langchain_core.exceptions.OutputParserException: Failed to parse TaskList from completion [{"task": "finish the UI", "person": "Sarah", "deadline": "Friday"}, {"task": "deploy the backend", "person": "Ahmed", "deadline": "next Monday"}]. Got: 1 validation error for TaskList
+  Input should be a valid dictionary or instance of TaskList [type=model_type, input_value=[{'task': 'finish the UI'...adline': 'next Monday'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-11-30 20:10:12,782 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 28, in _parse_obj
+    return self.pydantic_object.model_validate(obj)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\pydantic\main.py", line 705, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+pydantic_core._pydantic_core.ValidationError: 1 validation error for Task
+  Input should be a valid dictionary or instance of Task [type=model_type, input_value=[{'task': 'finish the UI'...adline': 'next Monday'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 97, in extract_tasks
+    tasks = self.client.generate(prompt=prompt_text, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 81, in parse
+    return super().parse(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 66, in parse_result
+    return self._parse_obj(json_object)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 35, in _parse_obj
+    raise self._parser_exception(e, obj) from e
+langchain_core.exceptions.OutputParserException: Failed to parse Task from completion [{"task": "finish the UI", "person": "Sarah", "deadline": "Friday"}, {"task": "deploy the backend", "person": "Ahmed", "deadline": "next Monday"}]. Got: 1 validation error for Task
+  Input should be a valid dictionary or instance of Task [type=model_type, input_value=[{'task': 'finish the UI'...adline': 'next Monday'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-11-30 20:12:37,453 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 28, in _parse_obj
+    return self.pydantic_object.model_validate(obj)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\pydantic\main.py", line 705, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+pydantic_core._pydantic_core.ValidationError: 1 validation error for Task
+  Input should be a valid dictionary or instance of Task [type=model_type, input_value=[{'task': 'finish the UI'...adline': 'next Monday'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 97, in extract_tasks
+    tasks = self.client.generate(prompt=prompt_text, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 81, in parse
+    return super().parse(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 66, in parse_result
+    return self._parse_obj(json_object)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 35, in _parse_obj
+    raise self._parser_exception(e, obj) from e
+langchain_core.exceptions.OutputParserException: Failed to parse Task from completion [{"task": "finish the UI", "person": "Sarah", "deadline": "Friday"}, {"task": "deploy the backend", "person": "Ahmed", "deadline": "next Monday"}]. Got: 1 validation error for Task
+  Input should be a valid dictionary or instance of Task [type=model_type, input_value=[{'task': 'finish the UI'...adline': 'next Monday'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-11-30 20:16:13,246 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 28, in _parse_obj
+    return self.pydantic_object.model_validate(obj)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\pydantic\main.py", line 705, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+pydantic_core._pydantic_core.ValidationError: 1 validation error for Task
+  Input should be a valid dictionary or instance of Task [type=model_type, input_value=[{'task': 'finish the UI'...adline': 'next Monday'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 103, in extract_tasks
+    tasks = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 81, in parse
+    return super().parse(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 66, in parse_result
+    return self._parse_obj(json_object)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 35, in _parse_obj
+    raise self._parser_exception(e, obj) from e
+langchain_core.exceptions.OutputParserException: Failed to parse Task from completion [{"task": "finish the UI", "person": "Sarah", "deadline": "Friday"}, {"task": "deploy the backend", "person": "Ahmed", "deadline": "next Monday"}]. Got: 1 validation error for Task
+  Input should be a valid dictionary or instance of Task [type=model_type, input_value=[{'task': 'finish the UI'...adline': 'next Monday'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-11-30 20:18:48,185 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 28, in _parse_obj
+    return self.pydantic_object.model_validate(obj)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\pydantic\main.py", line 705, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+pydantic_core._pydantic_core.ValidationError: 1 validation error for TaskList
+  Input should be a valid dictionary or instance of TaskList [type=model_type, input_value=[{'task': 'finish the UI'...adline': 'next Monday'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 103, in extract_tasks
+    tasks = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 81, in parse
+    return super().parse(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 66, in parse_result
+    return self._parse_obj(json_object)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 35, in _parse_obj
+    raise self._parser_exception(e, obj) from e
+langchain_core.exceptions.OutputParserException: Failed to parse TaskList from completion [{"task": "finish the UI", "person": "Sarah", "deadline": "Friday"}, {"task": "deploy the backend", "person": "Ahmed", "deadline": "next Monday"}]. Got: 1 validation error for TaskList
+  Input should be a valid dictionary or instance of TaskList [type=model_type, input_value=[{'task': 'finish the UI'...adline': 'next Monday'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-11-30 20:22:17,201 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 28, in _parse_obj
+    return self.pydantic_object.model_validate(obj)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\pydantic\main.py", line 705, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+pydantic_core._pydantic_core.ValidationError: 1 validation error for TaskList
+  Input should be a valid dictionary or instance of TaskList [type=model_type, input_value=[{'task': 'finish the UI'...adline': 'next Monday'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 103, in extract_tasks
+    tasks = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 81, in parse
+    return super().parse(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 66, in parse_result
+    return self._parse_obj(json_object)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 35, in _parse_obj
+    raise self._parser_exception(e, obj) from e
+langchain_core.exceptions.OutputParserException: Failed to parse TaskList from completion [{"task": "finish the UI", "person": "Sarah", "deadline": "Friday"}, {"task": "deploy the backend", "person": "Ahmed", "deadline": "next Monday"}]. Got: 1 validation error for TaskList
+  Input should be a valid dictionary or instance of TaskList [type=model_type, input_value=[{'task': 'finish the UI'...adline': 'next Monday'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-11-30 20:24:16,998 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 105, in extract_tasks
+    logging.info(f"Extracted {len(tasks)} tasks")
+TypeError: object of type 'TaskList' has no len()
+
+2025-12-01 00:48:49,500 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 82, in parse_result
+    return parse_json_markdown(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 153, in parse_json_markdown
+    return _parse_json(json_str, parser=parser)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 169, in _parse_json
+    return parser(json_str)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 126, in parse_partial_json
+    return json.loads(s, strict=strict)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 105, in extract_tasks
+    tasks = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 81, in parse
+    return super().parse(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 65, in parse_result
+    json_object = super().parse_result(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 85, in parse_result
+    raise OutputParserException(msg, llm_output=text) from e
+langchain_core.exceptions.OutputParserException: Invalid json output: 
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-12-01 00:56:17,744 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 82, in parse_result
+    return parse_json_markdown(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 153, in parse_json_markdown
+    return _parse_json(json_str, parser=parser)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 169, in _parse_json
+    return parser(json_str)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 126, in parse_partial_json
+    return json.loads(s, strict=strict)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 105, in extract_tasks
+    tasks = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 81, in parse
+    return super().parse(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 65, in parse_result
+    json_object = super().parse_result(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 85, in parse_result
+    raise OutputParserException(msg, llm_output=text) from e
+langchain_core.exceptions.OutputParserException: Invalid json output: 
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-12-01 01:01:00,129 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 82, in parse_result
+    return parse_json_markdown(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 153, in parse_json_markdown
+    return _parse_json(json_str, parser=parser)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 169, in _parse_json
+    return parser(json_str)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 126, in parse_partial_json
+    return json.loads(s, strict=strict)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 105, in extract_tasks
+    tasks = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 81, in parse
+    return super().parse(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 65, in parse_result
+    json_object = super().parse_result(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 85, in parse_result
+    raise OutputParserException(msg, llm_output=text) from e
+langchain_core.exceptions.OutputParserException: Invalid json output: 
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-12-01 01:10:18,085 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 82, in parse_result
+    return parse_json_markdown(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 153, in parse_json_markdown
+    return _parse_json(json_str, parser=parser)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 169, in _parse_json
+    return parser(json_str)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 126, in parse_partial_json
+    return json.loads(s, strict=strict)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 105, in extract_tasks
+    tasks = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 81, in parse
+    return super().parse(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 65, in parse_result
+    json_object = super().parse_result(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 85, in parse_result
+    raise OutputParserException(msg, llm_output=text) from e
+langchain_core.exceptions.OutputParserException: Invalid json output: 
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-12-01 01:10:22,369 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 82, in parse_result
+    return parse_json_markdown(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 153, in parse_json_markdown
+    return _parse_json(json_str, parser=parser)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 169, in _parse_json
+    return parser(json_str)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 126, in parse_partial_json
+    return json.loads(s, strict=strict)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\sentiment_analyzer.py", line 92, in analyze_sentiment
+    text = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 85, in parse_result
+    raise OutputParserException(msg, llm_output=text) from e
+langchain_core.exceptions.OutputParserException: Invalid json output: 
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-12-01 17:12:48,601 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 82, in parse_result
+    return parse_json_markdown(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 153, in parse_json_markdown
+    return _parse_json(json_str, parser=parser)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 169, in _parse_json
+    return parser(json_str)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 126, in parse_partial_json
+    return json.loads(s, strict=strict)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 105, in extract_tasks
+    tasks = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 81, in parse
+    return super().parse(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 65, in parse_result
+    json_object = super().parse_result(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 85, in parse_result
+    raise OutputParserException(msg, llm_output=text) from e
+langchain_core.exceptions.OutputParserException: Invalid json output: 
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-12-01 17:12:53,960 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 82, in parse_result
+    return parse_json_markdown(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 153, in parse_json_markdown
+    return _parse_json(json_str, parser=parser)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 169, in _parse_json
+    return parser(json_str)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 126, in parse_partial_json
+    return json.loads(s, strict=strict)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\sentiment_analyzer.py", line 92, in analyze_sentiment
+    text = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 85, in parse_result
+    raise OutputParserException(msg, llm_output=text) from e
+langchain_core.exceptions.OutputParserException: Invalid json output: 
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-12-01 17:28:26,910 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\summarizer.py", line 65, in summarize
+    chunks = self.chunk_text(transcript, max_size=3500)
+AttributeError: 'MeetingSummarizer' object has no attribute 'chunk_text'
+
+2025-12-01 17:34:51,327 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 82, in parse_result
+    return parse_json_markdown(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 153, in parse_json_markdown
+    return _parse_json(json_str, parser=parser)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 169, in _parse_json
+    return parser(json_str)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 126, in parse_partial_json
+    return json.loads(s, strict=strict)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 105, in extract_tasks
+    tasks = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 81, in parse
+    return super().parse(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 65, in parse_result
+    json_object = super().parse_result(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 85, in parse_result
+    raise OutputParserException(msg, llm_output=text) from e
+langchain_core.exceptions.OutputParserException: Invalid json output: 
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-12-01 17:34:55,423 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 82, in parse_result
+    return parse_json_markdown(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 153, in parse_json_markdown
+    return _parse_json(json_str, parser=parser)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 169, in _parse_json
+    return parser(json_str)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 126, in parse_partial_json
+    return json.loads(s, strict=strict)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\sentiment_analyzer.py", line 92, in analyze_sentiment
+    text = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 85, in parse_result
+    raise OutputParserException(msg, llm_output=text) from e
+langchain_core.exceptions.OutputParserException: Invalid json output: 
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-12-01 17:48:03,099 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 82, in parse_result
+    return parse_json_markdown(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 153, in parse_json_markdown
+    return _parse_json(json_str, parser=parser)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 169, in _parse_json
+    return parser(json_str)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 126, in parse_partial_json
+    return json.loads(s, strict=strict)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 105, in extract_tasks
+    tasks = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 81, in parse
+    return super().parse(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 65, in parse_result
+    json_object = super().parse_result(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 85, in parse_result
+    raise OutputParserException(msg, llm_output=text) from e
+langchain_core.exceptions.OutputParserException: Invalid json output: 
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-12-01 17:48:07,346 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 82, in parse_result
+    return parse_json_markdown(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 153, in parse_json_markdown
+    return _parse_json(json_str, parser=parser)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 169, in _parse_json
+    return parser(json_str)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 126, in parse_partial_json
+    return json.loads(s, strict=strict)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\sentiment_analyzer.py", line 92, in analyze_sentiment
+    text = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 85, in parse_result
+    raise OutputParserException(msg, llm_output=text) from e
+langchain_core.exceptions.OutputParserException: Invalid json output: 
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-12-01 23:42:27,046 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 82, in parse_result
+    return parse_json_markdown(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 153, in parse_json_markdown
+    return _parse_json(json_str, parser=parser)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 169, in _parse_json
+    return parser(json_str)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 126, in parse_partial_json
+    return json.loads(s, strict=strict)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 105, in extract_tasks
+    tasks = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 81, in parse
+    return super().parse(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 65, in parse_result
+    json_object = super().parse_result(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 85, in parse_result
+    raise OutputParserException(msg, llm_output=text) from e
+langchain_core.exceptions.OutputParserException: Invalid json output: 
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-12-01 23:42:32,060 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 82, in parse_result
+    return parse_json_markdown(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 153, in parse_json_markdown
+    return _parse_json(json_str, parser=parser)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 169, in _parse_json
+    return parser(json_str)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 126, in parse_partial_json
+    return json.loads(s, strict=strict)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\sentiment_analyzer.py", line 92, in analyze_sentiment
+    text = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 85, in parse_result
+    raise OutputParserException(msg, llm_output=text) from e
+langchain_core.exceptions.OutputParserException: Invalid json output: 
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-12-02 00:07:10,664 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\summarizer.py", line 79, in summarize
+    summary = self.client.generate(prompt , self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 51, in generate
+    result = self.model.invoke({"input": prompt}, **kwargs)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\language_models\llms.py", line 393, in invoke
+    [self._convert_input(input)],
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\language_models\llms.py", line 342, in _convert_input
+    raise ValueError(msg)
+ValueError: Invalid input type <class 'dict'>. Must be a PromptValue, str, or list of BaseMessages.
+
+2025-12-02 00:39:40,339 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 82, in parse_result
+    return parse_json_markdown(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 153, in parse_json_markdown
+    return _parse_json(json_str, parser=parser)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 169, in _parse_json
+    return parser(json_str)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 126, in parse_partial_json
+    return json.loads(s, strict=strict)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\sentiment_analyzer.py", line 92, in analyze_sentiment
+    text = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 85, in parse_result
+    raise OutputParserException(msg, llm_output=text) from e
+langchain_core.exceptions.OutputParserException: Invalid json output: 
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-12-02 00:55:43,456 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\summarizer.py", line 80, in summarize
+    summary = self.client.generate(prompt , self.parser)
+TypeError: GeminiClient.generate() takes 2 positional arguments but 3 were given
+
+2025-12-02 00:56:19,956 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\summarizer.py", line 81, in summarize
+    summary = self.client.generate(prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-12-02 00:57:42,096 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\summarizer.py", line 82, in summarize
+    summary = self.client.generate(prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+
+2025-12-02 01:22:54,871 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 105, in extract_tasks
+    tasks = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 58, in generate
+    result = (self.prompt_template | self.model).invoke({"transcript": prompt}, **kwargs)
+AttributeError: 'LangChainGoogleClient' object has no attribute 'prompt_template'
+
+2025-12-02 01:23:30,965 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\summarizer.py", line 79, in summarize
+    summary = self.client.generate(prompt , self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 58, in generate
+    result = (prompt | self.model).invoke({"transcript": prompt}, **kwargs)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\runnables\base.py", line 658, in __ror__
+    return RunnableSequence(coerce_to_runnable(other), self)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\runnables\base.py", line 6218, in coerce_to_runnable
+    raise TypeError(msg)
+TypeError: Expected a Runnable, callable or dict.Instead got an unsupported type: <class 'str'>
+
+2025-12-02 15:24:01,447 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\sentiment_analyzer.py", line 92, in analyze_sentiment
+    text = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 58, in generate
+    result = (prompt | self.model).invoke({"transcript": prompt}, **kwargs)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\runnables\base.py", line 658, in __ror__
+    return RunnableSequence(coerce_to_runnable(other), self)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\runnables\base.py", line 6218, in coerce_to_runnable
+    raise TypeError(msg)
+TypeError: Expected a Runnable, callable or dict.Instead got an unsupported type: <class 'str'>
+
+2025-12-02 15:25:05,290 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 105, in extract_tasks
+    tasks = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 58, in generate
+    result = (prompt | self.model).invoke({"transcript": prompt}, **kwargs)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\runnables\base.py", line 658, in __ror__
+    return RunnableSequence(coerce_to_runnable(other), self)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\runnables\base.py", line 6218, in coerce_to_runnable
+    raise TypeError(msg)
+TypeError: Expected a Runnable, callable or dict.Instead got an unsupported type: <class 'str'>
+
+2025-12-02 15:47:42,277 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 82, in parse_result
+    return parse_json_markdown(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 153, in parse_json_markdown
+    return _parse_json(json_str, parser=parser)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 169, in _parse_json
+    return parser(json_str)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 126, in parse_partial_json
+    return json.loads(s, strict=strict)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\task_extractor.py", line 105, in extract_tasks
+    tasks = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 81, in parse
+    return super().parse(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\pydantic.py", line 65, in parse_result
+    json_object = super().parse_result(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 85, in parse_result
+    raise OutputParserException(msg, llm_output=text) from e
+langchain_core.exceptions.OutputParserException: Invalid json output: 
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-12-02 15:47:47,127 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 82, in parse_result
+    return parse_json_markdown(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 153, in parse_json_markdown
+    return _parse_json(json_str, parser=parser)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 169, in _parse_json
+    return parser(json_str)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 126, in parse_partial_json
+    return json.loads(s, strict=strict)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\sentiment_analyzer.py", line 92, in analyze_sentiment
+    text = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 85, in parse_result
+    raise OutputParserException(msg, llm_output=text) from e
+langchain_core.exceptions.OutputParserException: Invalid json output: 
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-12-02 16:07:48,348 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 82, in parse_result
+    return parse_json_markdown(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 153, in parse_json_markdown
+    return _parse_json(json_str, parser=parser)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 169, in _parse_json
+    return parser(json_str)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 126, in parse_partial_json
+    return json.loads(s, strict=strict)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\sentiment_analyzer.py", line 92, in analyze_sentiment
+    text = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 85, in parse_result
+    raise OutputParserException(msg, llm_output=text) from e
+langchain_core.exceptions.OutputParserException: Invalid json output: 
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-12-02 16:16:13,365 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 82, in parse_result
+    return parse_json_markdown(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 153, in parse_json_markdown
+    return _parse_json(json_str, parser=parser)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 169, in _parse_json
+    return parser(json_str)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 126, in parse_partial_json
+    return json.loads(s, strict=strict)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\sentiment_analyzer.py", line 97, in analyze_sentiment
+    text = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 85, in parse_result
+    raise OutputParserException(msg, llm_output=text) from e
+langchain_core.exceptions.OutputParserException: Invalid json output: 
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-12-02 16:26:23,545 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\sentiment_analyzer.py", line 91, in analyze_sentiment
+    prompt = prompt.format(transcript=transcript)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\prompts\prompt.py", line 201, in format
+    return DEFAULT_FORMATTER_MAPPING[self.template_format](self.template, **kwargs)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\string.py", line 161, in format
+    return self.vformat(format_string, args, kwargs)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\formatting.py", line 33, in vformat
+    return super().vformat(format_string, args, kwargs)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\string.py", line 165, in vformat
+    result, _ = self._vformat(format_string, args, kwargs, used_args, 2)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\string.py", line 205, in _vformat
+    obj, arg_used = self.get_field(field_name, args, kwargs)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\string.py", line 270, in get_field
+    obj = self.get_value(first, args, kwargs)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\string.py", line 227, in get_value
+    return kwargs[key]
+KeyError: 'format_instructions'
+
+2025-12-02 16:32:22,205 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\sentiment_analyzer.py", line 93, in analyze_sentiment
+    text = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 50, in generate
+    result = (prompt_template | self.model).invoke({"input": prompt}, **kwargs)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\runnables\base.py", line 3246, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\language_models\llms.py", line 392, in invoke
+    self.generate_prompt(
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\language_models\llms.py", line 791, in generate_prompt
+    return self.generate(prompt_strings, stop=stop, callbacks=callbacks, **kwargs)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\language_models\llms.py", line 1002, in generate
+    return self._generate_helper(
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\language_models\llms.py", line 817, in _generate_helper
+    self._generate(
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_google_genai\llms.py", line 115, in _generate
+    chat_result = self.client._generate(
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_google_genai\chat_models.py", line 1790, in _generate
+    response: GenerateContentResponse = _chat_with_retry(
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_google_genai\chat_models.py", line 238, in _chat_with_retry
+    return _chat_with_retry(**params)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\tenacity\__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\tenacity\__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\tenacity\__init__.py", line 378, in iter
+    result = action(retry_state)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\tenacity\__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\tenacity\__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\concurrent\futures\_base.py", line 451, in result
+    return self.__get_result()
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\concurrent\futures\_base.py", line 403, in __get_result
+    raise self._exception
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\tenacity\__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_google_genai\chat_models.py", line 208, in _chat_with_retry
+    return generation_method(**kwargs)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 835, in generate_content
+    response = rpc(
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.NotFound: 404 models/gemini-2.0-flash-thinking is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+
+2025-12-02 16:36:02,498 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 82, in parse_result
+    return parse_json_markdown(text)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 153, in parse_json_markdown
+    return _parse_json(json_str, parser=parser)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 169, in _parse_json
+    return parser(json_str)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\utils\json.py", line 126, in parse_partial_json
+    return json.loads(s, strict=strict)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\sentiment_analyzer.py", line 93, in analyze_sentiment
+    text = self.client.generate(prompt=prompt, output_parser=self.parser)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\langchain_google_client.py", line 54, in generate
+    result = output_parser.parse(result)
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 96, in parse
+    return self.parse_result([Generation(text=text)])
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\langchain_core\output_parsers\json.py", line 85, in parse_result
+    raise OutputParserException(msg, llm_output=text) from e
+langchain_core.exceptions.OutputParserException: Invalid json output: 
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/OUTPUT_PARSING_FAILURE 
+
+2025-12-02 16:44:40,275 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\sentiment_analyzer.py", line 96, in analyze_sentiment
+    text = self.client.generate(prompt=prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.textz
+AttributeError: 'GenerateContentResponse' object has no attribute 'textz'
+
+2025-12-02 16:45:14,961 - ERROR - Traceback (most recent call last):
+  File "C:\Users\HP\Documents\MeetingMind\src\handlers\error_handler.py", line 60, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\HP\Documents\MeetingMind\src\analysis\sentiment_analyzer.py", line 96, in analyze_sentiment
+    text = self.client.generate(prompt=prompt)
+  File "C:\Users\HP\Documents\MeetingMind\src\llm\gemini_client.py", line 52, in generate
+    return response.text
+  File "C:\Users\HP\anaconda3\envs\whisperx\lib\site-packages\google\generativeai\types\generation_types.py", line 481, in text
+    raise ValueError(msg)
+ValueError: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 2.
+

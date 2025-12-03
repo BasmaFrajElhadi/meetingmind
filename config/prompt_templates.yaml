@@ -1,0 +1,90 @@
+summarization: |
+  You are an intelligent meeting assistant.
+  Summarize the following meeting transcript into clear, structured bullet points.
+  Focus on key decisions, discussions, and outcomes.
+  Transcript:
+  {transcript}
+
+
+task_extraction: |
+  Extract all tasks from the following meeting transcript.
+  For each task, identify:
+  - Task description
+  - Responsible person (if mentioned)
+  - Due date or deadline (if available)
+
+  Return the output as JSON in the following format:
+  {{
+    "tasks": [
+        {{
+            "task": "description here",
+            "person": "name or null",
+            "deadline": "date or null"
+        }}
+    ]
+  }}
+
+  Transcript:
+  {transcript}
+
+
+sentiment_analysis: |
+  Analyze the sentiment and emotional tone of the following meeting transcript.
+  Identify:
+  - overall_sentiment (positive, neutral, negative)
+  - emotions (list of key emotional indicators)
+  
+  Return the output as JSON in the following format:
+  {{
+      "overall_sentiment": "<sentiment>",
+      "emotions": ["<emotion1>", "<emotion2>", ...]
+  }}
+
+  Transcript:
+  {transcript}
+
+
+question_extraction: |
+  Identify all open questions or unresolved points that require follow-up in this meeting.
+
+  Transcript:
+  {transcript}
+
+
+topic_extraction: |
+  Identify the main topic of this meeting in a very short and clear phrase (max 6 words).
+
+  Transcript:
+  {transcript}
+
+
+web_search: |
+  You are an expert research assistant with access to up-to-date information online.
+  
+  Your task: Search online for the most relevant, latest, and trending information about the following topic:
+  "{query}"
+
+  Focus on extracting:
+  - Latest news, updates, and official announcements
+  - Market trends, innovations, and emerging patterns
+  - Key statistics, figures, and dates
+  - Important references, sources, or links
+
+  Instructions:
+  1. Provide the results in a structured format with clear bullet points or numbered items.
+  2. Include source links whenever possible.
+  3. Avoid generating summaries or opinions—just present the factual and trending information.
+  4. Make it actionable: highlight points relevant for decision-making or understanding the topic.
+
+
+topic_web_summary: |
+  You are a research assistant.
+  Using the provided web search results, generate a concise and up-to-date summary about the topic.
+
+  Topic:
+  {topic}
+
+  Web Search Results:
+  {web_results}
+
+  Provide a clear, professional summary suitable for decision-making.
